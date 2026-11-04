@@ -144,9 +144,8 @@ Certifique-se de ter o Python 3.8+ instalado.
 
 Trabalho desenvolvido para a disciplina de Inteligência Artificial da UFSM pelos alunos:
 
-- **Nome do Aluno 1** - [GitHub](https://github.com/) - *email@inf.ufsm.br*
-- **Nome do Aluno 2** - [GitHub](https://github.com/) - *email@inf.ufsm.br*
-- **Nome do Aluno 3** - [GitHub](https://github.com/) - *email@inf.ufsm.br*
+- **Weslley Menezes** - [GitHub]([https://github.com/](https://github.com/WeslleyHBM)) - *weslley.menezes@acad.ufsm.br*
+- **Deivid Trindade** - [GitHub]([https://github.com/](https://github.com/deividtrindade777)) - *deivid.trindade@acad.ufsm.br*
 
 **Docentes Responsáveis:** Prof. Rodrigo da Rosa Righi / Prof. Luis Alvaro de Lima Silva (UFSM)
 
