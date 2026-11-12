@@ -1,0 +1,5 @@
+Cenário,Modelo,Amostras_Treino,Amostras_Teste,Acurácia,Precisão,Recall,F1-Score,ROC-AUC
+Split Temporal (2010-13 vs 2014-15),MLP_Classifier,14064,5274,0.729,0.1975,0.2581,0.2238,0.5883
+Split Temporal (2010-13 vs 2014-15),Random_Forest,14064,5274,0.7474,0.2495,0.3333,0.2854,0.6628
+Split Espacial (Sul vs Norte),MLP_Classifier,9966,9372,0.8284,0.0,0.0,0.0,0.5115
+Split Espacial (Sul vs Norte),Random_Forest,9966,9372,0.8133,0.1682,0.0224,0.0395,0.6231
