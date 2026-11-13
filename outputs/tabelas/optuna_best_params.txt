@@ -1,0 +1,11 @@
+=== Melhores Hiperparâmetros (Optuna) ===
+n_layers: 2
+n_units_l0: 32
+n_units_l1: 128
+activation: relu
+solver: adam
+learning_rate_init: 0.007182487526912799
+alpha: 0.00012393817634330279
+batch_size: 64
+
+Melhor ROC-AUC Validação: 0.6778
