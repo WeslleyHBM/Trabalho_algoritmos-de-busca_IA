@@ -1,11 +1,16 @@
-=== Melhores Hiperpar�metros (Optuna) ===
+=== Melhores Hiperparâmetros (Optuna) ===
 n_layers: 2
 n_units_l0: 64
-n_units_l1: 64
+n_units_l1: 128
 activation: relu
 solver: adam
-learning_rate_init: 0.006307688942240756
-alpha: 0.0005836070292294365
-batch_size: 32
+learning_rate_init: 0.009879467601500755
+alpha: 6.040812913205608e-05
+batch_size: 64
 
-Melhor ROC-AUC Valida��o: 0.6686
+Melhor ROC-AUC Validação: 0.6786
+
+=== Comparação no Teste (Antes vs. Depois) ===
+      Modelo  Acurácia  Precisão   Recall  F1-Score  ROC-AUC  Tempo (s)
+MLP_Baseline  0.833247  0.454545 0.031201  0.058394 0.704397  12.921850
+  MLP_Optuna  0.834023  0.333333 0.001560  0.003106 0.687586   5.748373
