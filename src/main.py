@@ -16,12 +16,12 @@ def run_script(script_name):
         # Executa o script e redireciona a saída para o terminal atual
         result = subprocess.run([sys.executable, script_path], check=True)
         print(f"\n{'='*50}")
-        print(f"✅ {script_name} concluído com sucesso!")
+        print(f"{script_name} concluído com sucesso!")
         print(f"{'='*50}\n")
         return True
     except subprocess.CalledProcessError as e:
         print(f"\n{'='*50}")
-        print(f"❌ Erro ao executar {script_name}. Código de saída: {e.returncode}")
+        print(f"Erro ao executar {script_name}. Código de saída: {e.returncode}")
         print(f"{'='*50}\n")
         return False
 
@@ -32,7 +32,7 @@ def main():
         "eda_complementar.py",
         "preprocessing.py",
         "classification.py",
-        "classification_multiclasse.py",  # Baseado no print, parece ter 'classification_...'
+        "classification_multiclasse.py",
         "regression.py",
         "optuna_tuning.py",
         "regularization.py",

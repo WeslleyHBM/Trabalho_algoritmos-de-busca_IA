@@ -3,11 +3,9 @@ import pandas as pd
 import numpy as np
 
 def garantir_pastas():
-    """Garante que a pasta data/processed exista antes de salvar os dados."""
     os.makedirs('data/processed', exist_ok=True)
 
 def carregar_e_limpar_dados():
-    """Carrega a base bruta e aplica a limpeza idêntica à Etapa 1."""
     caminho_arquivo = 'data/raw/ProgramaRodofaunaAtropelada (1).xlsx'
     try:
         df_bruto = pd.read_excel(caminho_arquivo)

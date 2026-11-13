@@ -12,7 +12,6 @@ sns.set_theme(style="whitegrid")
 plt.rcParams['figure.figsize'] = (10, 6)
 
 def garantir_pastas():
-    """Garante que as pastas de output existam antes de salvar os arquivos."""
     os.makedirs('outputs/tabelas', exist_ok=True)
     os.makedirs('outputs/figuras', exist_ok=True)
 

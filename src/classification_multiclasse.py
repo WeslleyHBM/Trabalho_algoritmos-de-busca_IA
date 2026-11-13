@@ -18,7 +18,6 @@ def executar_classificacao_multiclasse():
     print("Iniciando Etapa 3.2 - Classificação Multiclasse...")
 
     # 1. Carregamento dos dados
-    # Pressupõe-se que o Deivid já limpou as duplicatas e tratou ausentes
     df = pd.read_csv('data/processed/dados_processados.csv')
     
     # Garantir que estamos usando apenas as 4 classes principais
@@ -26,7 +25,6 @@ def executar_classificacao_multiclasse():
     df = df[df['classe'].isin(classes_alvo)].copy()
 
     # Separação de X e y
-    # Remova outras colunas alvo ou identificadores que não são preditores
     cols_to_drop = ['classe', 'id', 'OBJECTID', 'especie_nm'] 
     X = df.drop(columns=[col for col in cols_to_drop if col in df.columns])
     

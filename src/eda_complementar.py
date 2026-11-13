@@ -17,8 +17,6 @@ def eda_complementar():
     # 2. Análise Temporal e Dias da Semana
     df_silvestre['data_dt_convertida'] = pd.to_datetime(df_silvestre['data_dt'], errors='coerce')
     
-    # O Pandas converte o dia da semana começando do 0 (segunda) até 6 (domingo)
-    # A base original está em string ('seg', 'ter', etc.)
     print(f"Total de registros com dia da semana igual a 'eg_': {(df_silvestre['dia_da_sem'] == 'eg_').sum()}")
     
     fim_de_semana = df_silvestre['data_dt_convertida'].dt.dayofweek.isin([5, 6]).sum()

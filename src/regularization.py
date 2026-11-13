@@ -34,9 +34,9 @@ def executar_regularizacao():
         activation='relu', 
         solver='adam', 
         learning_rate_init=0.00249, 
-        alpha=0.0, # ZERO Regularização L2
+        alpha=0.0,
         batch_size=128, 
-        early_stopping=False, # Sem parada antecipada
+        early_stopping=False,
         random_state=SEED, 
         max_iter=1 
     )
@@ -106,7 +106,7 @@ def executar_regularizacao():
     # Curva do modelo COM regularização (Sklearn guarda o loss.curve_ do modelo inteiro fitado com early_stopping)
     ax[1].plot(mlp_com.loss_curve_, label='Treino')
     if hasattr(mlp_com, 'validation_scores_'):
-        ax[1].plot([1 - x for x in mlp_com.validation_scores_], label='Validação (Erro)') # Sklearn guarda score (1-loss), convertemos
+        ax[1].plot([1 - x for x in mlp_com.validation_scores_], label='Validação (Erro)') # Sklearn guarda score (1-loss)
     ax[1].set_title('Curva de Loss - Com L2 e Early Stopping')
     ax[1].set_xlabel('Épocas')
     ax[1].set_ylabel('Loss / Erro de Validação')

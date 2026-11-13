@@ -30,7 +30,7 @@ def executar_regressao():
     X = pd.get_dummies(X, drop_first=True)
 
     # 3. Divisão Treino/Validação/Teste
-    # Na regressão espacial, usamos split aleatório base (o split temporal/espacial foi feito na Etapa 7)
+    # Na regressão espacial, usamos split aleatório base
     X_temp, X_test, y_temp, y_test = train_test_split(X, y, test_size=0.20, random_state=SEED)
     X_train, X_val, y_train, y_val = train_test_split(X_temp, y_temp, test_size=0.20, random_state=SEED)
 

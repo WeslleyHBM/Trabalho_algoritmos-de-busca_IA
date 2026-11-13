@@ -167,7 +167,7 @@ def executar_optuna():
         f.write("=== Comparação no Teste (Antes vs. Depois) ===\n")
         f.write(resultados.to_string(index=False))
 
-    # 6. Geração de Gráficos Determinísticos (sem sobreposição de títulos)
+    # 6. Geração de Gráficos Determinísticos
     ax1 = vis.plot_optimization_history(study)
     ax1.figure.suptitle("")
     ax1.set_title("", loc="left")
