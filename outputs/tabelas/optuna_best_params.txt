@@ -12,5 +12,5 @@ Melhor ROC-AUC Validação: 0.6786
 
 === Comparação no Teste (Antes vs. Depois) ===
       Modelo  Acurácia  Precisão   Recall  F1-Score  ROC-AUC  Tempo (s)
-MLP_Baseline  0.833247  0.454545 0.031201  0.058394 0.704397  11.048969
-  MLP_Optuna  0.834023  0.333333 0.001560  0.003106 0.687586   3.735955
+MLP_Baseline  0.833247  0.454545 0.031201  0.058394 0.704397  21.427551
+  MLP_Optuna  0.834023  0.333333 0.001560  0.003106 0.687586   7.774565
