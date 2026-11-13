@@ -1,0 +1,3 @@
+Modelo,Accuracy,Precision Macro,Recall Macro,F1 Macro
+MLP Multiclasse,0.8726415094339622,0.8517740429505135,0.8563619519662476,0.8539850881411297
+Random Forest Multiclasse,1.0,1.0,1.0,1.0

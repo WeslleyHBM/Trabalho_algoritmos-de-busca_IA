@@ -55,7 +55,7 @@ def executar_eda_inicial():
 
     # 6. Gráfico 1: Distribuição das Classes Taxonômicas
     plt.figure()
-    ax = sns.countplot(data=df_silvestre, x='classe', order=distribuicao_classes.index, palette='viridis')
+    ax = sns.countplot(data=df_silvestre, x='classe', hue='classe', order=distribuicao_classes.index, palette='viridis', legend=False)
     plt.title('Distribuição de Atropelamentos por Classe Taxonômica', fontsize=14)
     plt.xlabel('Classe Taxonômica', fontsize=12)
     plt.ylabel('Número de Ocorrências', fontsize=12)
@@ -69,7 +69,7 @@ def executar_eda_inicial():
     
     # 7. Gráfico 2: Distribuição Temporal por Ano
     plt.figure()
-    ax = sns.countplot(data=df_silvestre, x='ano', palette='magma')
+    ax = sns.countplot(data=df_silvestre, x='ano', hue='ano', palette='magma', legend=False)
     plt.title('Atropelamentos Registrados por Ano (2010 a 2015)', fontsize=14)
     plt.xlabel('Ano', fontsize=12)
     plt.ylabel('Número de Ocorrências', fontsize=12)
