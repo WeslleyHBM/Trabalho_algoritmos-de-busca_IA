@@ -98,6 +98,18 @@ O projeto contempla as seguintes etapas sequenciais de análise e modelagem:
 ### Pré-requisitos
 Certifique-se de ter o Python 3.8+ instalado.
 
+#arquivos necessários para reprodução dos experimentos;
+
+python -m venv venv
+.\venv\Scripts\Activate
+python.exe -m pip install --upgrade pip
+pip install pandas numpy scikit-learn matplotlib seaborn
+pip install openpyxl
+pip install optuna
+pip install optuna matplotlib
+
+python .\src\main.py
+
 1. **Clonar o Repositório:**
    ```bash
    git clone https://github.com/seu-usuario/predicao-atropelamento-fauna.git
